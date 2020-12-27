@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Masonry_LayoutGuideExt_Example' do
+  pod 'Masonry_LayoutGuideExt', :path => '../'
+
+  target 'Masonry_LayoutGuideExt_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+    pod 'FBSnapshotTestCase'
+  end
+end
