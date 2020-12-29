@@ -7,6 +7,9 @@
 //
 
 #import "MASViewController.h"
+#import "MASExampleBasicView.h"
+#import <Masonry_LayoutGuideExt/Masonry+layoutGuide.h>
+
 
 @interface MASViewController ()
 
@@ -14,16 +17,17 @@
 
 @implementation MASViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+//    UIView *view = [[MASExampleBasicView alloc] init];
+//    
+//    [self.view addSubview:view];
+//    
+//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(@0);
+//    }];
 }
 
 @end
