@@ -39,6 +39,8 @@ static char kInstalledConstraintsKey;
 @end
 
 @implementation MASGuideViewConstraint
+@dynamic installedView,layoutConstraint,layoutRelation,layoutPriority,layoutMultiplier,layoutConstant,mas_key;
+
 
 - (void)install {
     if (self.hasBeenInstalled) {

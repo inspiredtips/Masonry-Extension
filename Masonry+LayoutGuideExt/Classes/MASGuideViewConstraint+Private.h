@@ -17,9 +17,7 @@
 @property (nonatomic, assign) MASLayoutPriority layoutPriority;
 @property (nonatomic, assign) CGFloat layoutMultiplier;
 @property (nonatomic, assign) CGFloat layoutConstant;
-@property (nonatomic, assign) BOOL hasLayoutRelation;
 @property (nonatomic, strong) id mas_key;
-@property (nonatomic, assign) BOOL useAnimator;
 
 - (BOOL)supportsActiveProperty;
 - (BOOL)hasBeenInstalled;

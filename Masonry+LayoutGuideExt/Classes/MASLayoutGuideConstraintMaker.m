@@ -102,19 +102,6 @@
     if (attrs & MASAttributeHeight) [attributes addObject:self.layoutGuide.mas_height];
     if (attrs & MASAttributeCenterX) [attributes addObject:self.layoutGuide.mas_centerX];
     if (attrs & MASAttributeCenterY) [attributes addObject:self.layoutGuide.mas_centerY];
-    if (attrs & MASAttributeBaseline) [attributes addObject:self.layoutGuide.mas_baseline];
-    
-    if (attrs & MASAttributeFirstBaseline) [attributes addObject:self.layoutGuide.mas_firstBaseline];
-    if (attrs & MASAttributeLastBaseline) [attributes addObject:self.layoutGuide.mas_lastBaseline];
-    
-    if (attrs & MASAttributeLeftMargin) [attributes addObject:self.layoutGuide.mas_leftMargin];
-    if (attrs & MASAttributeRightMargin) [attributes addObject:self.layoutGuide.mas_rightMargin];
-    if (attrs & MASAttributeTopMargin) [attributes addObject:self.layoutGuide.mas_topMargin];
-    if (attrs & MASAttributeBottomMargin) [attributes addObject:self.layoutGuide.mas_bottomMargin];
-    if (attrs & MASAttributeLeadingMargin) [attributes addObject:self.layoutGuide.mas_leadingMargin];
-    if (attrs & MASAttributeTrailingMargin) [attributes addObject:self.layoutGuide.mas_trailingMargin];
-    if (attrs & MASAttributeCenterXWithinMargins) [attributes addObject:self.layoutGuide.mas_centerXWithinMargins];
-    if (attrs & MASAttributeCenterYWithinMargins) [attributes addObject:self.layoutGuide.mas_centerYWithinMargins];
     
     
     NSMutableArray *children = [NSMutableArray arrayWithCapacity:attributes.count];

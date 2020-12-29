@@ -34,43 +34,43 @@
 #pragma mark - NSLayoutAttribute properties
 
 - (MASViewAttribute *)mas_leading {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeLeading];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeLeading];
 }
 
 - (MASViewAttribute *)mas_trailing {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeTrailing];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeTrailing];
 }
 
 - (MASViewAttribute *)mas_left {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeLeft];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeLeft];
 }
 
 - (MASViewAttribute *)mas_top {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeTop];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeTop];
 }
 
 - (MASViewAttribute *)mas_right {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeRight];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeRight];
 }
 
 - (MASViewAttribute *)mas_bottom {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeBottom];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeBottom];
 }
 
 - (MASViewAttribute *)mas_width {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeWidth];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeWidth];
 }
 
 - (MASViewAttribute *)mas_height {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeHeight];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeHeight];
 }
 
 - (MASViewAttribute *)mas_centerX {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeCenterX];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeCenterX];
 }
 
 - (MASViewAttribute *)mas_centerY {
-    return [[MASViewAttribute alloc] initWithView:nil item:self layoutAttribute:NSLayoutAttributeCenterY];
+    return [[MASViewAttribute alloc] initWithView:self.owningView item:self layoutAttribute:NSLayoutAttributeCenterY];
 }
 
 #pragma mark - associated properties
