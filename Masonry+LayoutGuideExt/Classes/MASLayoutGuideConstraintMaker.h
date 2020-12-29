@@ -87,13 +87,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL removeExisting;
 
 /**
- *    initialises the maker with a default view
+ *    initialises the maker with a default layoutGuide
  *
- *    @param    view    any MASConstraint are created with this view as the first item
+ *    @param    layoutGuide    any MASConstraint are created with this layoutGuide as the first item
  *
  *    @return    a new MASConstraintMaker
  */
-- (id)initWithView:(MAS_VIEW *)view;
+- (id)initWithLayoutGuide:(UILayoutGuide *)layoutGuide;
 
 /**
  *    Calls install method on any MASConstraints which have been created by this maker
@@ -103,8 +103,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray *)install;
 
 - (MASConstraint * (^)(dispatch_block_t))group;
-
-- (id)initWithLayoutGuide:(UILayoutGuide *)layoutGuide;
 
 @end
 

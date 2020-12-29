@@ -1,12 +1,12 @@
 PODS:
   - Expecta (1.0.6)
   - Masonry (1.1.0)
-  - Masonry_LayoutGuideExt (0.1.0):
+  - "Masonry+LayoutGuideExt (0.1.0)":
     - Masonry
 
 DEPENDENCIES:
   - Expecta
-  - Masonry_LayoutGuideExt (from `../`)
+  - "Masonry+LayoutGuideExt (from `../`)"
 
 SPEC REPOS:
   trunk:
@@ -14,14 +14,14 @@ SPEC REPOS:
     - Masonry
 
 EXTERNAL SOURCES:
-  Masonry_LayoutGuideExt:
+  "Masonry+LayoutGuideExt":
     :path: "../"
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  Masonry_LayoutGuideExt: eb96e7f6674ac708d9faf4a3b1e51f2cec90eb2a
+  "Masonry+LayoutGuideExt": 37e5f07a3afec5da37dc6241b524f83c47261dc3
 
-PODFILE CHECKSUM: a12b9b653917cefd20a5a8f02918c30bd8ac745a
+PODFILE CHECKSUM: da342b98790c656fdcee2128e0882bb1712e532f
 
 COCOAPODS: 1.9.3

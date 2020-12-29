@@ -71,7 +71,7 @@
 //    }];
 
     //with is semantic and option
-    [redLayoutGuide mas_makeConstraints:^(MASConstraintMaker *make) {
+    [redLayoutGuide mas_makeConstraints:^(MASLayoutGuideConstraintMaker *make) {
         make.top.equalTo(superview.mas_top).with.offset(padding); //with with
         make.left.equalTo(greenView.mas_right).offset(padding); //without with
         make.bottom.equalTo(blueView.mas_top).offset(-padding);

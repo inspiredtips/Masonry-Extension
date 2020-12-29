@@ -9,7 +9,6 @@
 #define Masonry_layoutGuide_h
 
 #import <Masonry/Masonry.h>
-#import "MASGuideConstraintMaker.h"
 #import "UILayoutGuide+MASAdditions.h"
 #import "UILayoutGuide+MASShorthandAdditions.h"
 

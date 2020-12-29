@@ -21,13 +21,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-//    UIView *view = [[MASExampleBasicView alloc] init];
-//    
-//    [self.view addSubview:view];
-//    
-//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(@0);
-//    }];
+    UIView *view = [[MASExampleBasicView alloc] init];
+    
+    [self.view addSubview:view];
+    
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(@0);
+    }];
 }
 
 @end

@@ -370,7 +370,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Masonry_LayoutGuideExt_Example/Pods-Masonry_LayoutGuideExt_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry_LayoutGuideExt/Masonry_LayoutGuideExt.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry+LayoutGuideExt/Masonry_LayoutGuideExt.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

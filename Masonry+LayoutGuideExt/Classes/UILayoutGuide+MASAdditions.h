@@ -9,43 +9,25 @@
 #import <UIKit/UIKit.h>
 #import <Masonry/MASViewAttribute.h>
 #import <Masonry/MASUtilities.h>
-#import <Masonry/MASConstraintMaker.h>
+#import "MASLayoutGuideConstraintMaker.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface UILayoutGuide (MASAdditions)
 
 /**
  *    following properties return a new MASViewAttribute with current view and appropriate NSLayoutAttribute
  */
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_leading;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_trailing;
+
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_left;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_top;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_right;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_bottom;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_leading;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_trailing;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_width;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_height;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerX;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerY;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_baseline;
-@property (nonatomic, strong, readonly) MASViewAttribute *(^mas_attribute)(NSLayoutAttribute attr);
-
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_firstBaseline;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_lastBaseline;
-
-#if TARGET_OS_IPHONE || TARGET_OS_TV
-
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_leftMargin;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_rightMargin;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_topMargin;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_bottomMargin;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_leadingMargin;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_trailingMargin;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_centerXWithinMargins;
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_centerYWithinMargins;
-
-#endif
 
 /**
  *    a key to associate with this view
@@ -69,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return Array of created MASConstraints
  */
-- (NSArray *)mas_makeConstraints:(void(NS_NOESCAPE ^)(MASConstraintMaker *make))block;
+- (NSArray *)mas_makeConstraints:(void(NS_NOESCAPE ^)(MASLayoutGuideConstraintMaker * make))block;
 
 /**
  *  Creates a MASConstraintMaker with the callee view.
@@ -80,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return Array of created/updated MASConstraints
  */
-- (NSArray *)mas_updateConstraints:(void(NS_NOESCAPE ^)(MASConstraintMaker *make))block;
+- (NSArray *)mas_updateConstraints:(void(NS_NOESCAPE ^)(MASLayoutGuideConstraintMaker *make))block;
 
 /**
  *  Creates a MASConstraintMaker with the callee view.
@@ -91,9 +73,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return Array of created/updated MASConstraints
  */
-- (NSArray *)mas_remakeConstraints:(void(NS_NOESCAPE ^)(MASConstraintMaker *make))block;
+- (NSArray *)mas_remakeConstraints:(void(NS_NOESCAPE ^)(MASLayoutGuideConstraintMaker *make))block;
 
 @end
 
 
-NS_ASSUME_NONNULL_END

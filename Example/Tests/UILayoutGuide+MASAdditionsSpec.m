@@ -12,21 +12,21 @@ SpecBegin(LayoutGuide_MASAdditions)
 
 - (void)testSetTranslatesAutoresizingMaskIntoConstraints {
     UILayoutGuide *layoutGuide = UILayoutGuide.new;
-    [layoutGuide mas_makeConstraints:^(MASConstraintMaker *make) {
+    [layoutGuide mas_makeConstraints:^(MASLayoutGuideConstraintMaker * _Nonnull make) {
         expect(make.updateExisting).to.beFalsy();
     }];
 }
 
 - (void)testSetUpdateExisting {
     UILayoutGuide *layoutGuide = UILayoutGuide.new;
-    [layoutGuide mas_updateConstraints:^(MASConstraintMaker *make) {
+    [layoutGuide mas_updateConstraints:^(MASLayoutGuideConstraintMaker * _Nonnull make) {
         expect(make.updateExisting).to.beTruthy();
     }];
 }
 
 - (void)testSetRemoveExisting {
     UILayoutGuide *layoutGuide = UILayoutGuide.new;
-    [layoutGuide mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [layoutGuide mas_remakeConstraints:^(MASLayoutGuideConstraintMaker * _Nonnull make) {
         expect(make.removeExisting).to.beTruthy();
     }];
 }

@@ -7,11 +7,13 @@
 
 #import "MASLayoutGuideConstraintMaker.h"
 
-#import "MASCompositeConstraint.h"
-#import "MASConstraint+Private.h"
-#import "MASViewAttribute.h"
-#import "View+MASAdditions.h"
+#import <Masonry/MASCompositeConstraint.h>
+#import <Masonry/MASConstraint+Private.h>
+#import <Masonry/MASViewAttribute.h>
+#import <Masonry/View+MASAdditions.h>
+
 #import "UILayoutGuide+MASAdditions.h"
+#import "MASGuideViewConstraint.h"
 
 
 @interface MASLayoutGuideConstraintMaker ()<MASConstraintDelegate>
@@ -34,7 +36,7 @@
 
 - (NSArray *)install {
     if (self.removeExisting) {
-        NSArray *installedConstraints = [MASViewConstraint installedConstraintsForView:self.view];
+        NSArray *installedConstraints = [MASGuideViewConstraint installedConstraintsForLayoutGuide:self.layoutGuide];
         for (MASConstraint *constraint in installedConstraints) {
             [constraint uninstall];
         }
@@ -58,7 +60,7 @@
 
 - (MASConstraint *)constraint:(MASConstraint *)constraint addConstraintWithLayoutAttribute:(NSLayoutAttribute)layoutAttribute {
     MASViewAttribute *viewAttribute = [[MASViewAttribute alloc] initWithView:nil item:self.layoutGuide layoutAttribute:layoutAttribute];
-    MASViewConstraint *newConstraint = [[MASViewConstraint alloc] initWithFirstViewAttribute:viewAttribute];
+    MASGuideViewConstraint *newConstraint = [[MASGuideViewConstraint alloc] initWithFirstViewAttribute:viewAttribute];
     if ([constraint isKindOfClass:MASViewConstraint.class]) {
         //replace with composite constraint
         NSArray *children = @[constraint, newConstraint];
