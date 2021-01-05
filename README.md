@@ -1,9 +1,9 @@
 # Masonry_LayoutGuideExt
 
-[![CI Status](https://img.shields.io/travis/lining05/Masonry_LayoutGuideExt.svg?style=flat)](https://travis-ci.org/lining05/Masonry_LayoutGuideExt)
-[![Version](https://img.shields.io/cocoapods/v/Masonry_LayoutGuideExt.svg?style=flat)](https://cocoapods.org/pods/Masonry_LayoutGuideExt)
-[![License](https://img.shields.io/cocoapods/l/Masonry_LayoutGuideExt.svg?style=flat)](https://cocoapods.org/pods/Masonry_LayoutGuideExt)
-[![Platform](https://img.shields.io/cocoapods/p/Masonry_LayoutGuideExt.svg?style=flat)](https://cocoapods.org/pods/Masonry_LayoutGuideExt)
+[![CI Status](https://img.shields.io/travis/inspiredtip/Masonry_LayoutGuideExt.svg?style=flat)](https://travis-ci.org/inspiredtip/Masonry+LayoutGuideExt)
+[![Version](https://img.shields.io/cocoapods/v/Masonry_LayoutGuideExt.svg?style=flat)](https://cocoapods.org/pods/Masonry+LayoutGuideExt)
+[![License](https://img.shields.io/cocoapods/l/Masonry_LayoutGuideExt.svg?style=flat)](https://cocoapods.org/pods/Masonry+LayoutGuideExt)
+[![Platform](https://img.shields.io/cocoapods/p/Masonry_LayoutGuideExt.svg?style=flat)](https://cocoapods.org/pods/Masonry+LayoutGuideExt)
 
 ## Example
 
@@ -17,7 +17,7 @@ Masonry_LayoutGuideExt is available through [CocoaPods](https://cocoapods.org). 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Masonry_LayoutGuideExt'
+pod 'Masonry+LayoutGuideExt'
 ```
 
 ## Author
