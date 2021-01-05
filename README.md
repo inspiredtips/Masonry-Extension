@@ -22,7 +22,7 @@ pod 'Masonry_LayoutGuideExt'
 
 ## Author
 
-lining05, lining05@kuaishou.com
+inspiredtip, inspiretip@gmail.com
 
 ## License
 
