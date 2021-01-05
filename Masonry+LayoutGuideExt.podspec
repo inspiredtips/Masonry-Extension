@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lining05/Masonry+LayoutGuideExt'
+  s.homepage         = 'https://github.com/inspiredtips/Masonry-Extension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lining05' => 'lining05@kuaishou.com' }
-  s.source           = { :git => 'https://github.com/lining05/Masonry+LayoutGuideExt.git', :tag => s.version.to_s }
+  s.author           = { 'inspirdtip' => 'inspiredtip@gmail.com' }
+  s.source           = { :git => 'git@github.com:inspiredtips/Masonry-Extension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
